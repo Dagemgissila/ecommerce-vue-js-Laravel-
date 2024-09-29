@@ -3,12 +3,13 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-
+use App\Models\Product;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Product>
  */
 class ProductFactory extends Factory
 {
+    protected $model = Product::class;
     /**
      * Define the model's default state.
      *
@@ -22,7 +23,7 @@ class ProductFactory extends Factory
             "description"=>fake()->realText(),
             "price"=>fake()->randomFloat(2,20,100),
             "created_at"=>now(),
-            "deleted_at"=>now(),
+            "updated_at"=>now(),
             "created_by"=>1,
             "updated_by"=>1
 

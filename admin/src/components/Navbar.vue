@@ -47,10 +47,9 @@ import { Bars3Icon ,ArrowRightStartOnRectangleIcon,UserCircleIcon} from '@heroic
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 import store from '../store';
-import { useRouter } from 'vue-router';
 import { computed } from 'vue';
+import router from '../router';
 
-const router=useRouter();
 const emit=defineEmits(["toggle-sidebar"]);
 const currentUser=computed(()=>store.state.user.data)
 

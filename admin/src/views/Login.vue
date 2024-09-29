@@ -66,10 +66,9 @@
 import { ref } from 'vue';
 import GuestLayout from '../components/GuestLayout.vue';
 import store from '../store';
-import { useRouter } from 'vue-router';
+import router from '../router';
 const loading = ref(false);
 const errorMsg = ref("");
-const router = useRouter();
 
 const user = {
     email: "",

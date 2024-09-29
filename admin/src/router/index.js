@@ -5,7 +5,7 @@ import Login from "../views/Login.vue";
 import Requestpassword from "../views/Requestpassword.vue";
 import ResetPassword from "../views/ResetPassword.vue";
 import AppLayout from "../components/AppLayout.vue";
-import Products from "../views/Products.vue";
+import Products from "../views/Products/Products.vue";
 import NotFound from "../components/NotFound.vue";
 import store from "../store";
 const routes = [
